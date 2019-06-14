@@ -1,0 +1,28 @@
+.main-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+    .main-logo__img {
+        width: 63px;
+        height: 55px;
+    }
+}
+
+.main-logo__title {
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    color: #fff;
+    
+
+}
+
+@media (min-width: $desktop-width) {
+    .main-logo {
+        margin-bottom: 0;
+    }
+}

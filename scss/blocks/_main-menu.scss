@@ -1,0 +1,52 @@
+.main-menu {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 30%;
+}
+
+.main-menu__list {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-menu__link {
+    cursor: pointer;
+    
+  
+}
+
+.main-menu__toggle {
+    margin-top: -11px;
+    width: 22px;
+}
+
+@media (min-width: $tablet-width) {
+    .main-menu {
+        width: 120px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-menu {
+        position: static;
+        margin-left: auto;
+        width: 120px;
+    }
+
+    .main-menu__list {
+        justify-content: flex-end;
+    }
+
+    .main-menu__link {
+        margin-left: 25px;    
+    }
+
+    .main-menu__toggle {
+        display: none;
+    }
+}

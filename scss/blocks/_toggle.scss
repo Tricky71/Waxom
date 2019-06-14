@@ -1,0 +1,25 @@
+.toggle {
+    position: relative;
+    // width: 22px;
+    height: 2px;
+    background-color: #fff;
+    cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: inherit;
+            background-color: inherit;
+            top: 11px;
+            left: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: inherit;
+            background-color: inherit;
+            top: 22px;
+            left: 0;
+        }
+}

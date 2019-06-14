@@ -1,0 +1,27 @@
+.main-header {
+    padding: 20px 0;
+    background-color: gray;
+}
+
+.main-header__wrapper {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+}
+
+@media (min-width: $desktop-width) {
+    .main-header__wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+    }
+}
+ 
+@media (min-width: $desktop-width) {
+    .main-header {
+        padding: 40px 0;
+    }
+} 
+
