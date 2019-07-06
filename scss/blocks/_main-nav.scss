@@ -9,7 +9,11 @@
 
 .main-nav__list {
     @include reset-list;
+    width: 100%;
     display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    // position: absolute;
    
 }
 
@@ -21,10 +25,11 @@
     color: #fff;
     text-decoration: none;
     text-align: center;
-       &:hover {
-           color: #fff;
+        &:hover {
+           color: #02afdf;
            text-decoration: none;
-       }
+           border-bottom: 1px solid #02afdf;
+        }
 }
 
 @media (max-width: $tablet-width) {
@@ -48,9 +53,10 @@
     }
     .main-nav__list {
         width: 640px;
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         align-items: center;
+        background-color: transparent;
     }
 
     .main-nav__link {

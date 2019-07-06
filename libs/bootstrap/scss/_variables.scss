@@ -115,7 +115,7 @@ $enable-print-styles:       true !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // stylelint-disable
-$spacer: 1rem !default;
+$spacer: 10px !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
@@ -124,6 +124,7 @@ $spacers: map-merge((
   3: $spacer,
   4: ($spacer * 1.5),
   5: ($spacer * 3)
+
 ), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.

@@ -23,6 +23,11 @@
 	<!-- Custom Browsers Color End -->
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+	<link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css"> -->
+    
 
 </head>
 
@@ -30,7 +35,7 @@
 	<header class="main-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 pl-0 pr-0">
 					<div class="main-header__wrapper">
 						<a class="main-logo" href="">
 							<img src="img/sprite/logos.svg" alt="Logo" width="53" height="45" class="main-logo__img">
@@ -59,39 +64,583 @@
 									<a href="" class="main-nav__link">Shortcodes</a>
 								</li>
 								<li class="main-nav__item">
-									<a href="" class="main-nav__link">Contact</a>
+									<a href="" class="main-nav__link">Contacts</a>
 								</li>
 							</ul>
 						</nav>
 						<div class="main-menu">
 							<ul class="main-menu__list">
 								<li class="main-menu__item">
-									<a href="" class="main-menu__link">
-										<div class="main-menu__toggle toggle"></div>
-                                    </a>
-								</li>
+									<button type="button" class="main-menu__button main-menu__button--toggle">
+										<span class="visually-hidden">Main Menu</span>
+										<div class="toggle"></div>
+									</button>
+                                </li>
 								<li class="main-menu__item">
-									<a href="" class="main-menu__link">
+									<button type="button" class="main-menu__button main-menu__button--cart">
+										<span class="visually-hidden">Main Menu</span>
 										<img src="img/sprite/icon-cart.svg" alt="Basket" class="main-menu__item--cart" width="18" height="24">
-									</a>	
+									</button>
 								</li>
 								<li class="main-menu__item">
-									<a href="" class="main-menu__link">
-									    <img src="img/sprite/icon-search.svg" alt="Search" class="main-menu__item--cart" width="24" height="24">
-									</a>	
+									<button type="button" class="main-menu__button main-menu__button--search">
+										<span class="visually-hidden">Main Menu</span>
+										<img src="img/sprite/icon-search.svg" alt="Search" class="main-menu__item--cart" width="24" height="24">
+                                    </button>	
 								</li>
-								
 							</ul>
 						</div>
 					</div>	
 				</div>	
 			</div>
 		</div>	
+    </header>
+	<section class="main-promo promo">
+		<h1 class="visually-hidden">Waxom-PSD Template</h1>
+		<div class="promo__slider owl-carousel slider-1">
+		    <div class="item promo__slider-block promo__slider-block--block-1"></div>
+			<div class="item promo__slider-block promo__slider-block--block-2"></div>
+			<div class="item promo__slider-block promo__slider-block--block-3"></div>
+			<div class="item promo__slider-block promo__slider-block--block-4"></div>
+		</div>
+		<button class="promo__slider-button promo__slider-button--next next_button next"></button>
+		<button class="promo__slider-button promo__slider-button--prev prev_button prev"></button>
+		<ul class="promo__slider-pagination">
+			<li class="promo__slider-dot"></li>
+			<li class="promo__slider-dot"></li>
+			<li class="promo__slider-dot"></li>
+			<li class="promo__slider-dot"></li>
+		</ul>
+		<div class="promo__content">
+		   <div class="container">
+				<div class="row">
+					<div class="col">
+						<span class="promo__info">Unique and Modern Design</span>
+						<h2 class="promo__title">Portfolio PSD Template</h2>
+						<p class="promo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut omnis, natus qui distinctio beatae repudiandae non esse!</p>
+						<a href="" class="button promo__button">Get Started</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="main-features features">
+		<h2 class="visually-hidden">Main Features</h2>
+        <div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+					<div class="features__item">
+						<img src="img/sprite/icon-feat-1.svg" width="47" height="47" alt="feature-icon" class="features__image">
+						<h3 class="features__title">Web & App Design</h3>
+						<p class="features__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nihil quia soluta earum.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+                    <div class="features__item">
+						<img src="img/sprite/icon-feat-2.svg" width="47" height="47" alt="feature-icon" class="features__image">
+						<h3 class="features__title">Development</h3>
+						<p class="features__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nihil quia soluta earum.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3 mb-4 mb-md-0">
+                    <div class="features__item">
+						<img src="img/sprite/icon-feat-3.svg" width="47" height="47" alt="feature-icon" class="features__image">
+						<h3 class="features__title">Customization</h3>
+						<p class="features__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nihil quia soluta earum.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3">
+                     <div class="features__item">
+						<img src="img/sprite/icon-feat-4.svg" width="47" height="47" alt="feature-icon" class="features__image">
+						<h3 class="features__title">Marketing</h3>
+						<p class="features__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nihil quia soluta earum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-ideas ideas">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<h2 class="ideas__title">Waxom is Realisation of your ideas.</h2>
+					<p class="ideas__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam aspernatur odit facilis magnam architecto minus dolores ut inventore eaque fuga id, eveniet distinctio voluptatum?</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col pl-0 pr-0">
+					<div class="ideas__images"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-theme theme">
+		<div class="container">
+			<div class="row justify-content-xl-between align-items-center">
+				<div class="col-12 col-xl-6">
+					<div class="theme__info">
+						<h2 class="theme__title"><b>Waxom</b> Multipurpose WordPress Theme</h2>
+						<span class="theme__text">Dont Forget to Rate the Template. Thanks so much!</span>
+					</div>
+				</div>
+				<div class="col-12 col-xl-2">
+					<button class="theme__button button">Purchase Now</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-projects projects">
+		<header class="projects__header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2"></div>
+					<div class="col-xl-8 justify-content-end">
+						<h2 class="projects__title">Our Latest Projects.</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2"></div>
+					<div class="col-xl-8">
+						<p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2"></div>
+					<div class="col-xl-8">
+						<div class="projects__selector">
+							<ul class="projects__selector-list">
+								<li class="projects__selector-item">
+									<button class="projects__selector-button projects__selector-button--active">All</button>
+								</li>
+								<li class="projects__selector-item">
+									<button class="projects__selector-button">Web Design</button>
+								</li>
+								<li class="projects__selector-item">
+									<button class="projects__selector-button">Mobile App</button>
+								</li>
+								<li class="projects__selector-item">
+									<button class="projects__selector-button">Illustration</button>
+								</li>
+								<li class="projects__selector-item">
+									<button class="projects__selector-button">Photography</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="projects__main">
+			<div class="container">
+				<div class="row justify-content-xl-between">
+					<div class="col-md-6 col-xl-4 mb-4 mb-xl-5">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-1.jpg">
+									<img src="img/projects-img-1-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Claritas Etiam Processus</h3>
+								<p class="cart__text">Photography, Nature</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-xl-4 mb-4 mb-xl-5">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-2.jpg">
+									<img src="img/projects-img-2-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Quam Nutamus Farum</h3>
+								<p class="cart__text">Graphic Design, Mock-Up</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-xl-4 mb-4 mb-xl-5">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-3.jpg">
+									<img src="img/projects-img-3-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Usus Ligentis Videntur</h3>
+								<p class="cart__text">Photography, Holiday</p>
+							</div>
+						</a>
+					</div>
+			        <div class="col-md-6 col-xl-4 mb-4 mb-xl-0">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-4.jpg">
+									<img src="img/projects-img-4-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Claritus Etiam Processus</h3>
+								<p class="cart__text">Photography, Nature</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-xl-4 mb-4 mb-md-0 mb-xl-0">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-5.jpg">
+									<img src="img/projects-img-5-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Quam Nutamus Farum</h3>
+								<p class="cart__text">Graphic Design, Mock-Up</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-xl-4 ">
+						<a href="" class="projects__cart cart">
+							<div class="cart__image">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/projects-img-6.jpg">
+									<img src="img/projects-img-6-mob.jpg" alt="Project image" class="cart__img" width="290" height="237">
+								</picture>
+							</div>
+							<div class="cart__info">
+								<h3 class="cart__title">Usus Ligentis Videntur</h3>
+								<p class="cart__text">Photography, Holiday</p>
+							</div>
+						</a>
+					</div> 
+				</div>
+			</div>	
+		</div>	
+		<button class="projects__button button">Load More</button>
+	</section>
+	<section class="main-video video">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto mr-auto">
+					<div class="video__info">
+						<button class="video__button"></button>
+						<h2 class="video__title">Waxom Video Presentation</h2>
+						<p class="video__text">nvestigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+						<span class="video__time">03:26</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-mobile mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-5">
+					<div class="mobile__image"></div>
+				</div>	
+				<div class="col-md-6 col-xl-7">
+					<div class="mobile__info">
+						<h2 class="mobile__title">Excellent for Mobile Devices.</h2>
+						<p class="mobile__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas.</p>
+						<ul class="mobile__features">
+							<li class="mobile__item">Nam liber tempor cum soluta nobis eleifend option;</li>
+							<li class="mobile__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+							<li class="mobile__item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+							<li class="mobile__item">Investigationes demonstraverunt lectores</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-stats stats">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ml-auto mr-auto">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2 ml-auto">
+							    <div class="stats__item stats__item--figure">
+								   <span class="stats__count">3587</span>
+								   <b class="stats__info">Satisfied Clients</b>
+								</div>
+							</div>
+							<div class="col-lg-2">
+							    <div class="stats__item stats__item--coffee">
+								   <span class="stats__count">207</span>
+								   <b class="stats__info">Cups of Coffee</b>
+								</div>
+							</div>
+							<div class="col-lg-2">
+							    <div class="stats__item stats__item--posts">
+								   <span class="stats__count">2500</span>
+								   <b class="stats__info">Blog Posts</b>
+								</div>
+							</div>
+							<div class="col-lg-2">
+							    <div class="stats__item stats__item--likes">
+								   <span class="stats__count">873</span>
+								   <b class="stats__info">Likes</b>
+								</div>
+							</div>
+							<div class="col-lg-2 mr-auto">
+							    <div class="stats__item stats__item--launch">
+								   <span class="stats__count">900</span>
+								   <b class="stats__info">We Launched</b>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-blog blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 ml-auto mr-auto">
+					<header class="blog__header">
+						<h2 class="blog__title">Recent Posts</h2>
+						<p class="blog__info">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+				    </header>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="blog__slider slider">
+						<ul class="slider__list owl-carousel slider-2">
+							<li class="slider__item item">
+								<div class="slider__image slider__image--1">
+                                    <ul class="slider__list-2 slider-3">
+										<li class="slider__list-2-item slider__list-2-item--1 item"></li>
+										<li class="slider__list-2-item slider__list-2-item--2 item"></li>
+										<li class="slider__list-2-item slider__list-2-item--3 item"></li>
+										<li class="slider__list-2-item slider__list-2-item--4 item"></li>
+									</ul>
+									<ul class="blog__slider-3-pagination slider__pagination">
+										<li class="blog__slider-3-dot slider__dot"></li>
+										<li class="blog__slider-3-dot slider__dot"></li>
+										<li class="blog__slider-3-dot slider__dot"></li>
+										<li class="blog__slider-3-dot slider__dot"></li>
+									</ul>
+								</div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+							<li class="slider__item item">
+								<div class="slider__image slider__image--4"></div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+							<li class="slider__item item">
+								<div class="slider__image slider__image--3"></div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+							<li class="slider__item item">
+								<div class="slider__image slider__image--4"></div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+							<li class="slider__item item">
+								<div class="slider__image slider__image--5"></div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+							<li class="slider__item item">
+								<div class="slider__image slider__image--6"></div>
+								<div class="slider__info">
+									<h3 class="slider__title">Lorem ipsum dolor sit amet</h3>
+									<p class="slider__text">Investigationes demonstraverunt lectores legere me lius quod ii</p>
+									<a href="" class="slider__link">Read More</a>
+								</div>
+								<div class="slider__date date">
+									<b class="slider__day date__day">30</b>
+									<span class="slider__month date__month">Sep</span>
+								</div>
+							</li>
+						</ul>
+						<div class="slider__buttons">
+							<button type="button" class="blog__slider-button slider__button slider__button--prev prev_button"></button>
+							<button type="button" class="blog__slider-button slider__button slider__button--next next_button"></button>
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-partners partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-3 mb- mb-xl-0"><div class="partners__logo partners__logo--barber"></div></div>
+				<div class="col-md-6 col-xl-3 mb- mb-xl-0"><div class="partners__logo partners__logo--delicious"></div></div>
+				<div class="col-md-6 col-xl-3 mb- mb-md-0"><div class="partners__logo partners__logo--designers"></div></div>
+				<div class="col-md-6 col-xl-3"><div class="partners__logo partners__logo--royal"></div></div>
+			</div>
+		</div>
+	</section>
+	<section class="main-info info">
+		<h2 class="visually-hidden">Company Main Inf0</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-3">
+					<div class="info__company">
+						<a class="info__logo main-logo" href="">
+							<img src="img/sprite/logos.svg" alt="Logo" width="63" height="55" class="info-logo__img">
+							<span class="main-logo__title">Waxom</span>
+						</a>
+						<p class="info__company-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+						<a href="" class="info__company-link">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3">
+					<div class="info__posts">
+						<h3 class="info__title">Recent Posts</h3>
+						<ul class="info__posts-list">
+							<li class="info__posts-item">
+								<a href="" class="info__posts-link">
+									<span class="info__posts-date">September 08, 2015</span>
+									<p class="info__posts-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								</a>	
+							</li>
+							<li class="info__posts-item">
+								<a href="" class="info__posts-link">
+									<span class="info__posts-date">September 08, 2015</span>
+									<p class="info__posts-text">Optio vero autem rerum porro et beatae ad pariatur quasi.</p>
+								</a>	
+							</li>
+							<li class="info__posts-item">
+								<a href="" class="info__posts-link">
+									<span class="info__posts-date">September 08, 2015</span>
+									<p class="info__posts-text">Deserunt nulla corrupti quo earum consequatur voluptatum veritatis! Excepturi nulla!</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3">
+					<div class="info__twitter">
+						<h3 class="info__title">Our Twitter</h3>
+						<ul class="info__twitter-list">
+							<li class="info__twitter-item">
+								<p class="info__twitter-text"><a href="">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+								<span class="info__twitter-time">3 mins ago</span>
+							</li>
+							<li class="info__twitter-item">
+								<p class="info__twitter-text">Mirum est <a href="">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+								<span class="info__twitter-time">5 hours ago</span>
+							</li>
+							<li class="info__twitter-item">
+								<p class="info__twitter-text">Soluta nobis option <a href="">bit.ly/1Hniso7</a></p>
+								<span class="info__twitter-time">20 days ago</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-3">
+					<div class="info__widget">
+						<h3 class="info__title">Dribbble Widget</h3>
+						<ul class="info__widget-list">
+							<li class="info__widget-image"><img src="img/widget-img-1.jpg" alt="" class="info__widget-img info__widget-img--1" width="130" height="98"></li>
+							<li class="info__widget-image"><img src="img/widget-img-2.jpg" alt="" class="info__widget-img info__widget-img--2" width="130" height="98"></li>
+							<li class="info__widget-image"><img src="img/widget-img-3.jpg" alt="" class="info__widget-img info__widget-img--3" width="130" height="98"></li>
+							<li class="info__widget-image"><img src="img/widget-img-4.jpg" alt="" class="info__widget-img info__widget-img--4" width="130" height="98"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-xl-">
+					<ul class="footer__navigation">
+						<li class="footer__navigation-item">
+							<p class="footer__copyright-text">Copyright 2015 <b>Waxom</b></p>
+						</li>
+				        <li class="footer__navigation-item">
+							<a href="" class="footer__navigation-link">Privacy Policy</a>
+						</li>
+						<li class="footer__navigation-item">
+							<a href="" class="footer__navigation-link">FAQ</a>
+						</li>
+						<li class="footer__navigation-item">
+							<a href="" class="footer__navigation-link">Support</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 ml-auto">
+					<!-- <div class="footer__info"> -->
+						<!-- <div class="container"> -->
+							<!-- <div class="row"> -->
+								<!-- <div class="col-md-2"> -->
+								    <p class="footer__design">Designed by ThemeFire</p>
+								</div>
+								<div class="col-md-2">	
+								    <p class="footer__source">Only on Envato Market</p>
+								</div>	
+							<!-- </div>	 -->
+						<!-- </div>	 -->
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</footer>
 
-
-	</header>	
 
 	<script src="js/scripts.min.js"></script>
+	<!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
+	<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
 </body>
 </html>

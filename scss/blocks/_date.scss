@@ -1,0 +1,29 @@
+.date {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.date__day {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #363636;
+    text-align: center;
+    border-radius: 10% 10% 0 0;
+}
+
+.date__month {
+    width: 100%;
+    padding: 3px 0;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 10% 10%;
+}

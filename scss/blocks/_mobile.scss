@@ -1,0 +1,83 @@
+.mobile__image {
+    min-height: 540px;
+    background-image: url("../../img/iPhone-hand.png");
+    // background-size: 423px auto;
+    background-size: 320px 480px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.mobile__info {
+    padding: 40px 0;
+}
+
+.mobile__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.mobile__features {
+    @include reset-list;
+}
+
+.mobile__item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 10px;
+       &::after {
+           content: url(../../img/01.png);
+           position: absolute;
+           width: 21px;
+           height: 21px;
+           top: 3px;
+           left: 0;
+       }
+}
+
+@media (min-width: $tablet-width) {
+    .mobile__image {
+        background-size: 330px 500px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+     .mobile__image {
+        min-height: 700px;
+        background-size: 423px auto;
+    }
+
+    .mobile__info {
+        padding-top: 195px;
+        padding-bottom: 175px;
+    }
+
+    .mobile__title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .mobile__text {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+        line-height: 28px;
+    }
+
+    .mobile__item {
+        padding-left: 105px;
+        margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::after {
+               left: 45px;
+           }
+    }
+}
+

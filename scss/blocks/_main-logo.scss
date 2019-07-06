@@ -1,9 +1,18 @@
 .main-logo {
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
     text-decoration: none;
+        &:hover {
+           text-decoration: none;
+        }
 }
+
+// @media (max-width: $tablet-width) {
+//     .main-logo {
+//         margin-bottom: 20px;
+//     }
+// }
 
 @media (min-width: $tablet-width) {
     .main-logo__img {

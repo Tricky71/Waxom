@@ -1,0 +1,206 @@
+.slider__list {
+    @include reset-list;
+    margin-bottom: 20px;
+}
+
+.slider__list-2 {
+    @include reset-list;
+}
+
+.slider__list-2-item {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: 370px auto;
+    background-position: top center;
+    background-image: url("../../img/posts-img-1.jpg");
+       &--1 {
+            background-image: url("../../img/posts-img-1.jpg");
+        }
+        &--2 {
+            background-image: url("../../img/posts-img-2.jpg");
+        }
+        &--3 {
+            background-image: url("../../img/posts-img-3.jpg");
+        }
+        &--4 {
+            background-image: url("../../img/posts-img-4.jpg");
+        }
+}
+
+.slider__pagination {
+    position: absolute;
+    @include reset-list;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 15px;
+
+}
+
+.slider__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #728799;
+
+}
+
+.slider__item {
+    position: relative;
+        &:hover {
+            & .slider__image {
+               filter: brightness(50%);
+            }
+            & .slider__info {
+                background-color: #362f2d;
+                border: 1px solid #362f2d;
+            }
+            & .slider__title {
+                color: #bda992;
+            }
+            & .slider__text {
+                color: #fff;
+            }
+            & .slider__link {
+                color: #bda992;
+                &::after {
+                    border-left-color: #bda992;
+                }
+            }
+            & .slider__day {
+                background-color: #c7b299;
+            }
+            & .slider__month {
+                background-color: #a48d72;
+            }
+        }
+}
+
+.slider__date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.slider__info {
+    padding: 15px 20px;
+    border: 1px solid #dedede;
+    border-top: none;
+}
+
+.slider__image {
+    min-height: 220px;
+    background-color: #dedede;
+    background-repeat: no-repeat;
+    background-size: 370px auto;
+    background-position: top center;
+        &--1 {
+            position: relative;
+        }
+        &--2 {
+            background-image: url("../../img/posts-img-2.jpg");
+        }
+        &--3 {
+            background-image: url("../../img/posts-img-3.jpg");
+        }
+        &--4 {
+            background-image: url("../../img/posts-img-4.jpg");
+        }
+        &--5 {
+            background-image: url("../../img/posts-img-5.jpg");
+        }
+        &--6 {
+            background-image: url("../../img/posts-img-6.jpg");
+        }
+}
+
+.slider__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #555555;
+}
+
+.slider__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.slider__link {
+    position: relative;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #c7b299;
+    cursor: pointer;
+        &:after {
+           content: "";
+           position: absolute;
+           width: 1px;
+           height: 1px;
+           border: 5px solid transparent;
+           border-left-color: #c7b299;
+           top: 5px;
+           right: -5px;
+        }
+        &:hover {
+            color: #261e1b;
+            text-decoration: none;
+            &::after {
+                border-left-color: #261e1b;
+            }
+        }
+}
+
+.slider__buttons {
+    margin: 0 auto;
+    width: 53px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider__button {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    
+         &:hover {
+           border-color: #cfbda7;
+           &::after,
+           &::before {
+               background-color: #cfbda7;
+           }
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 1px;
+            background-color: #dadada;
+        }
+        &::before {
+            transform: rotate(45deg);
+            top: 7px;
+            left: 7px;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            bottom: 7px;
+            left: 7px;
+        }
+        &--prev {
+            transform: rotate(180deg);
+        }
+}

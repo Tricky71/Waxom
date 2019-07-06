@@ -1,0 +1,47 @@
+.theme {
+    padding: 45px 0;
+    background-image: linear-gradient(to right,#241d1a,#4d3327);
+}
+
+.theme__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+       & b {
+           font-weight: 400;
+           color: #736456;
+       }
+
+}
+
+.theme__text {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #759293;
+    text-align: center;
+}
+
+.theme__button {
+    margin: 0 auto;
+    width: 170px;
+}
+
+@media (min-width: $desktop-width) {
+    .theme__title {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .theme__text {
+        margin-bottom: 0;
+        text-align: left;
+    }
+}

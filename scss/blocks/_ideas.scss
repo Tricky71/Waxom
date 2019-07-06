@@ -1,0 +1,57 @@
+.ideas {
+    // min-height: 563px;
+    padding-top: 40px;
+    background-color: #EDFFFF;
+    
+}
+
+.ideas__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ideas__info {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.ideas__images {
+    min-height: 500px;
+    background-image: url("../../img/browser-left.jpg");
+    background-size: 770px auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+
+
+@media (min-width: $tablet-width) {
+    .ideas {
+        padding-top: 25px;
+    }
+
+    .ideas__images {
+        height: 100%;
+        background-image: url("../../img/browser-center-tablet.jpg"), url("../../img/browser-left-tablet.jpg"), url("../../img/browser-right-tablet.jpg");
+        background-size: 320px auto, 320px auto, 320px auto;
+        background-repeat: no-repeat;
+        background-position: bottom center, left 100px, right 100px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .ideas__images {
+        background-image: url("../../img/browser-center.jpg"), url("../../img/browser-left.jpg"), url("../../img/browser-right.jpg");
+        background-size: 770px auto, 770px auto, 770px auto;
+    }
+}
