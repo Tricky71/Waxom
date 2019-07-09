@@ -20,6 +20,10 @@
   
 }
 
+// .main-menu__image {
+//     fill: #fff;
+// }
+
 .main-menu__button {
     padding: 0;
     width: 25px;
@@ -30,7 +34,16 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+        &:hover {
+            & .main-menu__image {
+               fill: #c7b299;
+            }
+        }
 }
+
+
+
+
 
 @media (min-width: $tablet-width) {
     .main-menu {

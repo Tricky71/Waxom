@@ -19,6 +19,17 @@
 
 
         }
+        &:hover {
+            & .features__image {
+                fill: #c7b299;
+            }
+            & .features__title {
+                color: #c7b299;
+            }
+            &::after {
+                background-color: #c7b299;
+            } 
+        }
 }
 
 .features__image {
