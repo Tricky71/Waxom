@@ -3,7 +3,7 @@
     padding-top: 210px;
     padding-bottom: 205px;
     background-color: gray;
-    background-image: url("../../img/video-img-mob.jpg");
+    background-image: url("../img/video-img-mob.jpg");
     background-size: 800px auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     border: none;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
-    background-image: url("../../img/icon-play.png");
+    background-image: url("../img/icon-play.png");
     background-repeat: no-repeat;
     background-size: 70px auto;
     background-position: center;
@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
     .video {
-        background-image: url("../../img/video-img.jpg");
+        background-image: url("../img/video-img.jpg");
         background-size: 1920px auto;
     }
 }
