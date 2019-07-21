@@ -15,28 +15,28 @@
            margin-bottom: 0;
         }
         &--barber {
-            background-image: url("../../img/logo-01.png");
+            background-image: url("../img/logo-01.png");
             background-repeat: no-repeat;
             background-size: 210px auto;
             background-position: center;
 
         }
         &--delicious {
-            background-image: url("../../img/logo-02.png");
+            background-image: url("../img/logo-02.png");
             background-repeat: no-repeat;
             background-size: 210px auto;
             background-position: center;
 
         }
         &--designers {
-            background-image: url("../../img/logo-03.png");
+            background-image: url("../img/logo-03.png");
             background-repeat: no-repeat;
             background-size: 210px auto;
             background-position: center;
 
         }
         &--royal {
-            background-image: url("../../img/logo-04.png");
+            background-image: url("../img/logo-04.png");
             background-repeat: no-repeat;
             background-size: 210px auto;
             background-position: center;
@@ -50,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
     .partners {
-        background-image: url("../../img/brands-bg.jpg");
+        background-image: url("../img/brands-bg.jpg");
         background-size: 1920px auto;
     }
 }

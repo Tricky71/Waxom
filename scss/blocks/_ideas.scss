@@ -27,7 +27,7 @@
 
 .ideas__images {
     min-height: 500px;
-    background-image: url("../../img/browser-left.jpg");
+    background-image: url("../img/browser-left.jpg");
     background-size: 770px auto;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -42,7 +42,7 @@
 
     .ideas__images {
         height: 100%;
-        background-image: url("../../img/browser-center-tablet.jpg"), url("../../img/browser-left-tablet.jpg"), url("../../img/browser-right-tablet.jpg");
+        background-image: url("../img/browser-center-tablet.jpg"), url("../img/browser-left-tablet.jpg"), url("../img/browser-right-tablet.jpg");
         background-size: 320px auto, 320px auto, 320px auto;
         background-repeat: no-repeat;
         background-position: bottom center, left 100px, right 100px;
@@ -51,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
     .ideas__images {
-        background-image: url("../../img/browser-center.jpg"), url("../../img/browser-left.jpg"), url("../../img/browser-right.jpg");
+        background-image: url("../img/browser-center.jpg"), url("../img/browser-left.jpg"), url("../img/browser-right.jpg");
         background-size: 770px auto, 770px auto, 770px auto;
     }
 }
